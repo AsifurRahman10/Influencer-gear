@@ -22,21 +22,21 @@
 
 /* share style */
 
-.flex{
+.flex {
     display: flex;
 }
 
-.color-1{
+.color-1 {
     color: #3A3A3A;
 }
 
-.color-2{
+.color-2 {
     color: #787885;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #E02C6D;
-    padding: 10px 24px 10px 24px ;
+    padding: 10px 24px 10px 24px;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 41px;
@@ -46,7 +46,7 @@
 
 /* nav bar design */
 
-.navbar{
+.navbar {
     max-width: 1200px;
     justify-content: space-between;
     margin: 0 auto;
@@ -54,42 +54,43 @@
     margin-bottom: 50px;
 }
 
-.navbar h1{
+.navbar h1 {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.navbar li{
+.navbar li {
     list-style: none;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     color: #3A3A3A;
 }
-.nav-list{
+
+.nav-list {
     gap: 34px;
 }
 
-.nav-list-name{
+.nav-list-name {
     font-size: 1rem;
     font-weight: 600;
 }
 
 /* banner style */
 
-.banner-container{
+.banner-container {
     max-width: 1200px;
     justify-content: space-between;
     margin: 0px auto;
     align-items: center;
 }
 
-.banner-image img{
+.banner-image img {
     width: 100%;
 }
 
-.banner-image{
+.banner-image {
     background-image: url("../images/Circle\ design.svg");
     background-position: center;
     width: 475px;
@@ -97,42 +98,93 @@
     background-repeat: no-repeat;
 }
 
-.banner-text{
+.banner-text {
     max-width: 582px;
 }
 
-.banner-text h1{
+.banner-text h1 {
     font-size: 3.25rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
-.banner-text p{
+.banner-text p {
     font-size: 1rem;
     font-weight: 600;
 }
 
+/* marketplace section design */
+
+.marketplace {
+    max-width: 1110px;
+    margin: 69px auto 100px auto;
+}
+
+.marketplace-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.marketplace-logo img {
+    padding-left: 61px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right,
+            rgba(192, 204, 218, 0.1),
+            rgba(192, 204, 218, 0.6),
+            rgba(192, 204, 218, 0.1));
+}
+
+/* responsive mobile */
+
 @media screen and (max-width: 576px) {
+
     .navbar,
-    .nav-list
-    {
+    .nav-list {
         flex-direction: column;
     }
 
-    .banner-container{
+    .banner-container {
         flex-direction: column-reverse;
     }
 
-    .nav-list, .banner-container{
+    .nav-list,
+    .banner-container {
         padding: 0px;
         text-align: center;
         background-size: auto;
     }
-    .banner-image img{
+
+    .banner-image img {
         position: relative;
         width: 80%;
         top: 50px;
     }
 
-    
+    .marketplace-logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .marketplace-logo img {
+        padding: 0px;
+    }
+}
+
+/* tab view */
+@media screen and (min-width: 576px) and (max-width : 992px) {
+    .banner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .
 }

@@ -5,8 +5,6 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:
-        "slnt" 0;
 }
 
 .manrope {
@@ -32,6 +30,10 @@
 
 .color-2 {
     color: #787885;
+}
+
+.color-3{
+    color: #18191F;
 }
 
 .btn-primary {
@@ -86,6 +88,10 @@
     align-items: center;
 }
 
+.banner-text{
+    max-width: 582px;
+}
+
 .banner-image img {
     width: 100%;
 }
@@ -93,9 +99,10 @@
 .banner-image {
     background-image: url("../images/Circle\ design.svg");
     background-position: center;
-    width: 475px;
-    height: 475px;
     background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 .banner-text {
@@ -123,6 +130,8 @@
 .marketplace-logo{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
 }
 
 .marketplace-logo img {
@@ -138,6 +147,39 @@ hr {
             rgba(192, 204, 218, 0.1),
             rgba(192, 204, 218, 0.6),
             rgba(192, 204, 218, 0.1));
+}
+
+/* Popular-Collection design */
+
+.Popular-Collection{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.popular-title{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.card{
+    max-width: 300px;
+    max-height: 479px;
+    border: none;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    padding: 15px 17px;
+}
+
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    padding: 0px;
+}
+
+.card-price{
+    color: rgba(0, 0, 0, 0.87);
 }
 
 /* responsive mobile */
@@ -159,19 +201,10 @@ hr {
         text-align: center;
         background-size: auto;
     }
-
-    .banner-image img {
-        position: relative;
-        width: 80%;
-        top: 50px;
-    }
-
     .marketplace-logo {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
+        gap: 5px;
     }
 
     .marketplace-logo img {
@@ -185,6 +218,4 @@ hr {
         flex-direction: column-reverse;
         text-align: center;
     }
-
-    .
 }

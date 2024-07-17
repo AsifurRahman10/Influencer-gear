@@ -130,14 +130,15 @@
 
 .marketplace {
     max-width: 1110px;
-    margin: 69px auto 100px auto;
+    margin: 0 auto 0 auto;
 }
 
-.marketplace-logo {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+.image{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 60px;
 }
 
 hr {
@@ -308,16 +309,8 @@ hr {
         background-size: auto;
     }
 
-    .marketplace-logo {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        align-items: center;
-    }
-
-    .marketplace-logo img {
-        width: 80%;
-        
+    .image{
+        gap: 15px;
     }
 
     .card-container {
